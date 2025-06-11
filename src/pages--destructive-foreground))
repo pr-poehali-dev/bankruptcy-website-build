@@ -1,0 +1,80 @@
+
+import Header from "@
+        muted: {
+          DEFAULT: 'h/components/Header";
+import HeroSection from "@sl(var(--muted))',
+          foreground: 'hsl(var/components/HeroSection";
+import De(--muted-foreground))'
+        },
+        accent: {
+          DEFAULT: 'hbtCalculator from "@/components/Desl(var(--accent))',
+          foregrounbtCalculator";
+import Bd: 'hsl(var(--accent-foreground))'
+        },
+        popover: {enefitsSection from "@/components/BenefitsSection";
+import TrustSignals from "@/components/TrustSignals";
+          DEFAULT: 'hsl(var(--
+import Footer from "@/components/popover))',
+          foregrounFooter";
+
+const Index = () => {
+  return (d: 'hsl(var(--popover-foreground))'
+    <div className="min-h
+        },
+        card: {
+          DEFAULT: 'hsl-screen">
+      <Header />
+      <HeroSection />
+      (var(--card))',
+          foreground: 'hsl
+      {/* Calculator Section */}
+      <section className(var(--card-foreground))'
+        ="py-20 bg-white},
+        'law-blue': '#1E3A8A',
+        'law-gold': '#FFD700',
+        'law-gray">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12': '#F8FAFC',">
+            <h2 className
+      },
+      key="font-montserrat text-3xl md:text-frames: {
+        "accordion-down":4xl font-bold text-law-blue mb- {
+          from: { height: "0" },
+          to: { height: "4">
+              Узнайте, как решить вашу долvar(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {говую проблему
+            </h2>
+          from: { height: "var(--radix-accordion-
+            <p className="text-xl text-gray-600 maxcontent-height)" },
+          to: { height:-w-2xl mx-auto "0" },
+        },">
+              Рассчитайте оптимальное решение за
+        "fade-in": { 2 минуты
+          "0%": { opacity: "0
+            </p>
+          ", transform: "translateY(10px)" },</div>
+          
+          <div
+          "100%": { opacity: className="flex justify-center">
+            <De "1", transform: "translateY(0)" }
+        },
+        "scalebtCalculator />
+          </div>
+        </div>
+      </section>-in": {
+          "0
+      
+      <BenefitsSection />
+      %": { transform: "scale(0.95)", opacity: "0<TrustSignals />" },
+          "100%": { transform: "scale(1)",
+      <Footer />
+    </div>
+  );
+};
+
+export default Index opacity: "1" }
+        }
+      },
+      animation: {
+        "accordion-down": ";

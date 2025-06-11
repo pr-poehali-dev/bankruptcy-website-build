@@ -1,0 +1,130 @@
+
+@import url("ui/label';
+import { Select, SelectContent, SelectItem, SelectTrigger,https://fonts.googleapis.com/css2?family SelectValue } from '@/components/ui/select';=Montserrat:wght@400;600;700&
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import Icon from '@/componentsfamily=Open+Sans:w/ui/icon';
+
+const DebtCalculator =ght@400;600&display=swap");
+@tailwind base; () => {
+  const [debtAmount
+@tailwind components;
+@tailwind utilities;
+
+@, setDebtAmount] = useStatelayer base {
+  :root {
+    --background: 0 ('');
+  const [debtType, set0% 100%;
+    --foreground: DebtType] = useState('');222.2 84% 4
+  const [result, setResult].9%;
+    --card: = useState<string | null>(null);
+
+  const 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%; calculateSolution = () => {
+    const
+    --primary: 215 amount = parseInt(debtAmount.replace(/\s/g, '')); 100% 29%;
+    --
+    
+    if (amount < 50000) {
+      setResult('primary-foreground: 0 Рекомендуем: Ре0% 100%;
+    --secondary: 210 40% 96%;
+    --secondaryструктуризация долга');-foreground:
+    } else if (amount  222.2 47.4% < 500000) {
+      setResult('11.2%;
+    --mРекомендуем: Банuted: 210 40% кротство физического лица');96%;
+    --muted-
+    } else {
+      setResultforeground: 215.4 16.3% 46.9('Рекомендуем%;
+    --accent: 48: Консультация по ком 100% 50%;
+    --accentплексному решению');
+    -foreground: 222.2 47.4% 11.}
+  };
+
+  const formatNumber = (value: string) =>2%;
+    --destructive: {
+    const numbers = value.replace 0 84.2% 60.2%;
+    --destruct(/\D/g, '');
+    returnive-foreground: 210 40%  numbers.replace(/\B(?=(\d{98%;
+    --border: 214.3 31.3})+(?!\d))/g, '8% 91.4%; ');
+  };
+
+  return
+    --input: 214.3 31.8%  (
+    <section className="py-16 bg91.4%;
+    --ring-gray-50">
+      : 215 100% 29<div className="container mx-auto px%;
+    --radius: -4">
+        <div className="max-0.5rem;
+  }w-4xl mx-auto">
+          <div
+
+  .dark {
+    --background: 222.2 84 className="text-center mb-12% 4.9%;
+    ">
+            <h2 className--foreground: 210 40% ="text-4xl font-bol98%;
+    --card: 222.2 d text-primary mb-4">84% 4.9%;
+    --card-
+              Калькуляторforeground: 210 40% долгов
+             98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210</h2>
+            <p className="text-lg text-gray-600">
+              Узнайте оптимальное решение для вашей ситуации за 30 40% 98%;
+    --primary: 215 100% секунд
+             29%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: </p>
+          </div>
+
+          <Card className="shadow-xl">
+            <Car217.2 32.dHeader>
+              <CardTitle className="flex6% 17.5%;
+    --secondary- items-center space-x-2foreground: 210 40% 98%;">
+                <Icon name="Calculator
+    --muted: 217.2 32." className="w-66% 17.5%;
+    --muted-foreground: h-6 text-primary" /> 215 20.2% 65.
+                <span>Быстрая1%;
+    --accent: 48 100% оценка вашего долга 50%;
+    --accent-foreground: </span>
+              </CardTitle>
+            </CardHeader>222.2 47.4% 
+            <CardContent className="space11.2%;
+    --destruct-y-6">
+              <div className="griive: 0 62.8% d md:grid-cols-2 gap30.6%;
+    --destruct-6">
+                ive-foreground: 210 40% 98<div className="space-y-2%;
+    --border: 217.2 32">
+                  <Label htmlFor="debt-amount">Общ.6% 17.5%;ая сумма долга (
+    --input: 217.2 32.руб.)</Label>
+                6% 17.5%;  <Input
+                    id="
+    --ring: 212.7 26debt-amount"
+                    placeholder.8% 83.9%;="1 000 000"
+                    value
+  }
+}
+
+@layer={debtAmount}
+                    onChange={(e) => setDebtAmount(formatNumber(e.target.value) base {
+  * {
+    @apply border-border;
+  )}
+                  />
+                }
+  body {
+    @apply bg-background text-foregroun</div>
+                d font-open-sans;
+  }
+  h
+                <div className="space-y1,
+  h2,
+  h3,
+  -2">
+                  <Labelh4,
+  h5,>Тип долга</Label>
+  h6 {
+    
+                  <Select value={de@apply font-montserrat;
+  }
+}btType} onValueChange={setDebtType}>

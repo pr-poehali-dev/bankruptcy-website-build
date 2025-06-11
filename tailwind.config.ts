@@ -1,96 +1,111 @@
-import type { Config } from "tailwindcss";
 
-export default {
-	darkMode: ["class"],
-	content: [
-		"./pages/**/*.{ts,tsx}",
-		"./components/**/*.{ts,tsx}",
-		"./app/**/*.{ts,tsx}",
-		"./src/**/*.{ts,tsx}",
+import type { Config } from
+                    <SelectTrigger>
+                       "tailwindcss";
+
+export<SelectValue placeholder="Выберите тип долга" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="credit default {
+	dark">Кредиты и займы</SelectMode: ["class"],
+	contentItem>
+                      <SelectItem: [
+		"./pages value="taxes">Нало/**/*.{ts,tsx}",
+		"./components/**/*.ги и штрафы</SelectItem>{ts,tsx}",
+		"./app/**
+                      <SelectItem value="business">Биз/*.{ts,tsx}",нес-долги</SelectItem
+		"./src/**/*.{ts>
+                      <SelectItem value,tsx}"
 	],
-	prefix: "",
-	theme: {
+	prefix="utilities">Ж: "",
+	theme: {КХ</SelectItem>
+                
 		container: {
 			center: true,
-			padding: '2rem',
-			screens: {
-				'2xl': '1400px'
+			padding: '      <SelectItem value="other2rem',
+			">Другое</SelectItem>screens: {
+				'2xl
+                    </SelectContent>
+                ': '1400px'
 			}
 		},
-		extend: {
+		extend: {  </Select>
+                </div>
+              
+			fontFamily: {
+				'</div>
+
+              <Buttonmontserrat': ['Montserrat', 'sans 
+                onClick={calculateSolution}-serif'],
+				'open-
+                className="w-full bgsans': ['Open Sans', '-primary hover:bg-primarysans-serif'],
+			},/90"
+                size
 			colors: {
-				border: 'hsl(var(--border))',
-				input: 'hsl(var(--input))',
+				border:="lg"
+                disabled={!debtAmount || !debtType 'hsl(var(--border))',}
+              >
+                
+				input: <Icon name="Search" className="w-5 h-5 mr-2" />'hsl(var(--input
+                Получить решение
+              </Button>))',
 				ring: 'hsl(var(--ring))',
-				background: 'hsl(var(--background))',
-				foreground: 'hsl(var(--foreground))',
-				primary: {
-					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
-				},
+				background: 'hsl(var(
+
+              {result--background))',
+				foreground: 'hsl(var(--foreground) && (
+                <div className="mt)',
+				primary: {-6 p-6
+					DEFAULT: 'hsl(var(-- bg-accent/10 rounded-lg border border-accent/20primary))',
+					foreground: animate-fade-in 'hsl(var(--primary-foreground))'
+				">
+                  <div},
 				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
+					 className="flex items-start space-x-DEFAULT: 'hsl(var3">
+                    <Icon(--secondary))',
+					fore name="CheckCircle" classNameground: 'hsl(var="w-6 h-6 text-green-600 (--secondary-foreground))'
 				},
 				destructive: {
-					DEFAULT: 'hsl(var(--destructive))',
-					foreground: 'hsl(var(--destructive-foreground))'
-				},
+					DEFAULT: 'hsl(var(--destructive)mt-0.5" />
+                )',
+					foreground: 'hsl(var    <div>
+                      (--destructive-foreground))'
+				},<h4 className="font-semibol
 				muted: {
-					DEFAULT: 'hsl(var(--muted))',
-					foreground: 'hsl(var(--muted-foreground))'
+					DEFAULT: 'd text-primary mb-2hsl(var(--muted))',
+					">{result}</h4>
+                      <pforeground: 'hsl(var(--m className="text-gray-600 uted-foreground))'
 				},
 				accent: {
-					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))'
-				},
+					DEFAULT: 'mb-4">
+                        Дляhsl(var(--accent))',
+					foreground: 'hsl(var точной оценки и составления плана действ(--accent-foreground))'
+				},ий 
+                        рекоменду
 				popover: {
-					DEFAULT: 'hsl(var(--popover))',
-					foreground: 'hsl(var(--popover-foreground))'
+					DEFAULT: 'hем получить персональную консультsl(var(ацию
+                      </p>--popover)
+                      <Button className)',
+					foreground: '="bg-accent texthsl(var(--popover-foreground))'
 				},
 				card: {
 					DEFAULT: 'hsl(var(--card))',
-					foreground: 'hsl(var(--card-foreground))'
+					foregroun-primary hover:bg-accent/d: 'hsl(var(90">
+                        Записаться на консультацию
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </CardContent>
+          </Card>--card-fore
+        </div>
+      ground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
-			},
-			borderRadius: {
-				lg: 'var(--radius)',
-				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
-			},
-			keyframes: {
-				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
-				},
-				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
-				}
-			},
-			animation: {
-				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
-		}
-	},
-	plugins: [require("tailwindcss-animate")],
-} satisfies Config;
+				'</div>
+    </sectionlaw-blue': '#1E3A>
+  );
+};
+
+export default DebtCalculator;8A',
+				'law-gold': '#FFD700',
